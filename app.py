@@ -120,6 +120,11 @@ async def get_completion(
             detail=f"{str(e)}\nStack Trace:\n{stack_trace}"
         )
 
+# Create logs directory if it doesn't exist
+if not os.path.exists(path_to_logs):
+    os.makedirs(path_to_logs)
+
+
 # Start logger service
 logging.basicConfig(
     filename=f"{path_to_logs}/{datetime.today().strftime('%Y-%m-%d')}_system_log.txt",
