@@ -1,0 +1,7 @@
+fastapi>=0.100.0
+uvicorn==0.15.0
+requests==2.26.0
+python-dotenv==0.19.0
+langchain-qdrant==0.2.0
+openai==1.74.0
+langchain-openai==0.3.13
